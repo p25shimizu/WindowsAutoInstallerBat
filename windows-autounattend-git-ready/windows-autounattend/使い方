@@ -1,0 +1,42 @@
+# Usage
+
+Windowsインストールメディアへ `autounattend.xml` を組み込み、
+対象PCをそのメディアから起動することで自動セットアップを実行します。
+
+詳細な導入手順については以下を参照してください。
+
+- [Installation Guide](docs/INSTALL.md)
+
+# Installation Guide
+
+## 1. Windows ISOを準備する
+
+Microsoft公式のWindows 11 ISOを準備します。
+
+---
+
+## 2. ISOを展開する
+
+ISO編集ソフトを使用し、Windows ISOの内容を編集可能な状態にします。
+
+例：
+
+- AnyBurn
+- PowerISO
+- UltraISO
+
+---
+
+## 3. autounattend.xmlを配置する
+
+`autounattend.xml` をWindowsインストールメディアの
+ルートディレクトリへ配置します。
+
+```text
+Windows11/
+├─ autounattend.xml
+├─ boot/
+├─ efi/
+├─ sources/
+├─ support/
+└─ setup.exe
