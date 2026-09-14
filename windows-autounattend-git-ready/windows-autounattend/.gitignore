@@ -1,0 +1,12 @@
+# Private/local variants
+autounattend.local.xml
+*.private.xml
+secrets.*
+.env
+.env.*
+
+# Temporary files
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
