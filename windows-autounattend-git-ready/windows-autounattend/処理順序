@@ -1,0 +1,30 @@
+Windows PE
+   │
+   ├─ TPM / Secure Boot / RAMチェック回避
+   │
+   ▼
+Specialize
+   │
+   ├─ スクリプト展開
+   ├─ Specialize.ps1
+   │   ├─ RemovePackages.ps1
+   │   ├─ RemoveCapabilities.ps1
+   │   └─ RemoveFeatures.ps1
+   │
+   ├─ DefaultUser NTUSER.DAT Load
+   ├─ DefaultUser.ps1
+   └─ NTUSER.DAT Unload
+   │
+   ▼
+OOBE
+   │
+   └─ user 作成 / 自動ログオン
+   │
+   ▼
+初回ログオン
+   │
+   ├─ UserOnce.ps1
+   └─ FirstLogon.ps1
+   │
+   ▼
+セットアップ完了
