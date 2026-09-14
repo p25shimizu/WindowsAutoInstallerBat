@@ -1,0 +1,2 @@
+# WindowsAutoInstallerBat
+WindowsISOに適用する社内リリース向けのオートインストーラバッチ
